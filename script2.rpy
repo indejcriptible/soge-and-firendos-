@@ -3,8 +3,7 @@ define m = Character("Manager")
 define g = Character("Grupo")
 define f = Character("Fan")
 
-label start:
-
+label tronco:
 
     # Aquí vamos a tener la presentación del personaje principal:
     # El personaje está en un camerino y recibe la carta de un fan.
@@ -15,50 +14,49 @@ label start:
 
     "Intro"
 
-    label en_algun_label_estara_este_menu:
     menu:
         "Actriz":
-            jump ruta1
+            jump rama1
 
         "Idol":
-            jump ruta2
+            jump rama2
 
 # los labels a la izquierda, con : al final y su contenido indentado
-label ruta1:
+label rama1:
 
-    # Ruta 1
+    # Rama 1
 
-    "Texto Ruta 1"
+    "Texto Rama 1"
 
     menu:
 
-        "Romántica":
+        "Ruta Sentimental":
 
-            jump 1_1
+            jump rama1_A
 
-        "Comedia":
+        "Ruta Cachondeo":
 
-            jump 1_2
+            jump rama1_B
 
-        "Meta":
+        "Ruta Meta":
 
-            jump 1_3
+            jump rama1_C
 
-label 1_1:
+label rama1_A:
 
-    "Esto debería ser la ruta romántica"
-
-    jump ending
-
-label 1_2:
-
-    "The funny"
+    "Ruta Sentimental"
 
     jump ending
 
-label 1_3:
+label rama1_B:
 
-    "man"
+    "Ruta Cachondeo"
+
+    jump ending
+
+label rama1_C:
+
+    "Ruta Meta"
 
     jump ending
 
