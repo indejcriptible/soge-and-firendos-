@@ -1,4 +1,7 @@
-define t = Character("Tommy")
+define c = Character("Chica")
+define m = Character("Manager")
+define g = Character("Grupo")
+define f = Character("Fan")
 
 label start:
 
@@ -12,57 +15,54 @@ label start:
 
     "Intro"
 
+    label en_algun_label_estara_este_menu:
     menu:
-
         "Actriz":
             jump ruta1
 
         "Idol":
             jump ruta2
 
+# los labels a la izquierda, con : al final y su contenido indentado
+label ruta1:
 
-    label ruta1:
+    # Ruta 1
 
-            # Ruta 1
-
-            "Texto Ruta 1"
+    "Texto Ruta 1"
 
     menu:
 
         "Romántica":
 
-                jump 1_1
+            jump 1_1
 
         "Comedia":
 
-                jump 1_2
+            jump 1_2
 
         "Meta":
 
-                jump 1_3
+            jump 1_3
 
-        label 1_1
+label 1_1:
 
-        "Esto debería ser la ruta romántica"
+    "Esto debería ser la ruta romántica"
 
-            jump ending
+    jump ending
 
+label 1_2:
 
-        label 1_2
+    "The funny"
 
-        "The funny"
+    jump ending
 
-            jump ending
+label 1_3:
 
+    "man"
 
-        label 1_3
+    jump ending
 
-        "man"
-
-            jump ending
-
-
-    label ending:
+label ending:
 
     scene bl
 
