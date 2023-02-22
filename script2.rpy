@@ -32,29 +32,29 @@ label rama1:
 
         "Ruta Sentimental":
 
-            jump rama1_A
+            jump rama1_rutaA
 
         "Ruta Cachondeo":
 
-            jump rama1_B
+            jump rama1_rutaB
 
         "Ruta Meta":
 
-            jump rama1_C
+            jump rama1_rutaC
 
-label rama1_A:
+label rama1_rutaA:
 
     "Ruta Sentimental"
 
     jump ending
 
-label rama1_B:
+label rama1_rutaB:
 
     "Ruta Cachondeo"
 
     jump ending
 
-label rama1_C:
+label rama1_rutaC:
 
     "Ruta Meta"
 
