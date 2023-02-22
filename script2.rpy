@@ -41,21 +41,21 @@ label start:
 
                 jump 1_3
 
-        label 1_1
+        label 1_1:
 
         "Esto debería ser la ruta romántica"
 
             jump ending
 
 
-        label 1_2
+        label 1_2:
 
         "The funny"
 
             jump ending
 
 
-        label 1_3
+        label 1_3:
 
         "man"
 
